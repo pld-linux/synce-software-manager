@@ -11,10 +11,10 @@ Source0:	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
 URL:		http://synce.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 1:2.0.0
-BuildRequires:	multisync-devel
-BuildRequires:	synce-devel = %{version}
-Requires:	synce
+BuildRequires:	libgnomeui-devel >= 2.0.0
+BuildRequires:	pkgconfig
+BuildRequires:	synce-librapi2-devel >= 0.9.0
+Requires:	synce-librapi2 >= 0.9.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -29,12 +29,13 @@ urz±dzeniach Pocket PC.
 %setup -q
 
 %build
-%{__aclocal}
+%{__libtoolize}
+%{__aclocal} -I m4
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure \
-	-with-multisync-include=%{_includedir}/multisync
+%configure
+
 %{__make}
 
 %install
@@ -50,5 +51,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
+%doc COPYING ChangeLog
 %attr(755,root,root) %{_bindir}/*
+# dir shared with synce-rra, synce-gnomevfs, synce-trayicon
+%dir %{_datadir}/synce
 %{_datadir}/synce/*.glade
