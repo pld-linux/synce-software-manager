@@ -9,11 +9,11 @@ Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
 # Source0-md5:	d9fd5f5dceff3e7eb0ded05d0a395f7e
 URL:		http://synce.sourceforge.net/
-BuildRequires:	synce-devel = %{version}
-BuildRequires:	multisync-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 1:2.0.0
+BuildRequires:	multisync-devel
+BuildRequires:	synce-devel = %{version}
 Requires:	synce
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
