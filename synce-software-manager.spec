@@ -2,7 +2,7 @@ Summary:	Software manager for Pocket PC
 Summary(pl):	Narzêdzie do zarz±dzania oprogramowaniem w Pocket PC
 Name:		synce-software-manager
 Version:	0.9.0
-Release:	0.2
+Release:	1
 License:	MIT
 Vendor:		The SynCE Project
 Group:		Applications/Communications
