@@ -1,5 +1,5 @@
-Summary:	Software manager for GNOME 2
-Summary(pl):	Narzêdzie do zadz±dzania oprogramowaniem w Pocket PC
+Summary:	Software manager for Pocket PC
+Summary(pl):	Narzêdzie do zarz±dzania oprogramowaniem w Pocket PC
 Name:		synce-software-manager
 Version:	0.9.0
 Release:	0.2
@@ -18,7 +18,7 @@ Requires:	synce
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Graphical tool for installing and removing software on a Windows CE
+Graphical tool for installing and removing software on a Pocket PC
 device.
 
 %description -l pl
