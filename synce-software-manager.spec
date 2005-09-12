@@ -12,6 +12,7 @@ URL:		http://synce.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libgnomeui-devel >= 2.0.0
+BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.213
 BuildRequires:	synce-librapi2-devel >= 0.9.0
