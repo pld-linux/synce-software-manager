@@ -33,12 +33,11 @@ urz±dzeniach Pocket PC.
 
 %build
 %{__libtoolize}
-%{__aclocal} -I m4
+%{__aclocal}
 %{__autoconf}
 %{__autoheader}
 %{__automake}
 %configure
-
 %{__make}
 
 %install
