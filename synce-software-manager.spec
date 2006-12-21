@@ -2,7 +2,7 @@ Summary:	Software manager for Pocket PC
 Summary(pl):	Narzêdzie do zarz±dzania oprogramowaniem w Pocket PC
 Name:		synce-software-manager
 Version:	0.9.0
-Release:	1
+Release:	2
 License:	MIT
 Vendor:		The SynCE Project
 Group:		Applications/Communications
@@ -17,7 +17,6 @@ BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.213
 BuildRequires:	synce-librapi2-devel >= 0.9.0
 Requires:	synce-librapi2 >= 0.9.0
-ExcludeArch:	%{x8664} alpha ia64 ppc64 s390x sparc64
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
