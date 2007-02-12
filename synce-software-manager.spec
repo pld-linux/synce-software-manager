@@ -1,5 +1,5 @@
 Summary:	Software manager for Pocket PC
-Summary(pl):	Narzêdzie do zarz±dzania oprogramowaniem w Pocket PC
+Summary(pl.UTF-8):   NarzÄ™dzie do zarzÄ…dzania oprogramowaniem w Pocket PC
 Name:		synce-software-manager
 Version:	0.9.0
 Release:	2
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Graphical tool for installing and removing software on a Pocket PC
 device.
 
-%description -l pl
-Graficzne narzêdzie do instalacji i deinstalacji oprogramowania na
-urz±dzeniach Pocket PC.
+%description -l pl.UTF-8
+Graficzne narzÄ™dzie do instalacji i deinstalacji oprogramowania na
+urzÄ…dzeniach Pocket PC.
 
 %prep
 %setup -q
