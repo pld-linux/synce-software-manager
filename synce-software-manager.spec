@@ -1,5 +1,5 @@
 Summary:	Software manager for Pocket PC
-Summary(pl.UTF-8):   Narzędzie do zarządzania oprogramowaniem w Pocket PC
+Summary(pl.UTF-8):	Narzędzie do zarządzania oprogramowaniem w Pocket PC
 Name:		synce-software-manager
 Version:	0.9.0
 Release:	2
